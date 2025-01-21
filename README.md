@@ -118,6 +118,6 @@ Tested with: macOS Ventura (Apple Silicon) with Xcode Command Line Tools 14 & ma
 
 ## On 64-bit bug that killed the game
 
-I did not find it, decompiled game worked in x64 mode on the first try.\
-It was either lost in decompilation or introduced in x64 port/not present in x86 build.\
-Based on public description of the bug (no ball collision), I guess that the bug was in `TEdgeManager::TestGridBox`
+There are 2 Versions of Windows 64-bit, one is for the x86 CPU (amd64), another one is for the Intel Itanium CPUs (IA-64).
+The 64-bit version of the game existed in the amd64 version (called "Windows XP Professional x64 Edition). Although it runs normall, there are graphical glitches.
+On the IA-64 however (Called "Windows XP 64-Bit Edition") have collision issues, such as the ball just is through the paddles caused by float rounding issues.
